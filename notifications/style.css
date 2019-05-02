@@ -1,0 +1,93 @@
+.notification{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+  min-height: 150px;
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: -5px 5px 15px 0px slategrey;
+}
+.close{
+  float: right;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #427b43;
+  padding: 0 4px;
+}
+.slides{
+  display: block;
+  width: 80%;
+  border: 2px solid #000000;
+  padding: 5px;
+}
+.slides h2, .slides p{
+  margin: 0;
+}
+.slides h2{
+  margin: 0 0 5px 0;
+}
+.position{
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  background: #6cd8a2;
+  border: 1px solid red;
+  color: #fff;
+}
+.slides p{
+  height: 80px;
+  cursor: pointer;
+  overflow-y: auto;
+}
+.container{
+  display: flex;
+  flex-flow: row;
+  margin-top: 20px;
+}
+.nav{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav a{
+  width: 20px;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  text-align: center;
+  color: #c3c3c3;
+  text-decoration: none;
+}
+.nav a:hover{
+  cursor: pointer;
+  color: #ed143d;
+}
+a.prev{
+  order: 1;
+}
+a.next{
+  order: 3;
+}
+.nav-circle{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  order: 2;
+  width: 130px;
+  height: 100%;
+  margin: 0 10px;
+}
+span.circle{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+}
+span.circle:hover{
+  cursor: pointer;
+}
+span.active{
+  background: #039be5;
+}
